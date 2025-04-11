@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tailwind Dark Mode: next-themes에서 html에 .dark 클래스를 붙일 때 */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --accent: #0070f3;
+}
+
+html.dark {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --accent: #79ffe1;
+}
+
+body {
+  @apply bg-background text-foreground;
+  margin: 0;
+  padding: 0;
+}
+
+/* 기타 reset/공통 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+}

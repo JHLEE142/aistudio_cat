@@ -1,0 +1,14 @@
+# Node.js 관련
+node_modules/
+package-lock.json
+
+# Next.js 관련
+.next/
+out/
+
+# 환경 변수 파일
+.env*
+
+# 기타 에디터 관련 파일
+.vscode/
+*.log
