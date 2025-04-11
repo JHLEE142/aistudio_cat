@@ -10,6 +10,7 @@ const buttonVariants = cva(
       variant: {
         default: "bg-black text-white hover:bg-gray-800",
         outline: "border border-gray-300 text-black hover:bg-gray-100",
+        ghost: "bg-transparent text-muted hover:bg-muted",
       },
       size: {
         default: "h-10 px-4",
@@ -24,9 +25,8 @@ const buttonVariants = cva(
   }
 )
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+  VariantProps<typeof buttonVariants> {
   asChild?: boolean
 }
 
